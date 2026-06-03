@@ -389,6 +389,48 @@ ul,ol{list-style:none}
 .placeholder-card{border-style:dashed;background:transparent}
 .placeholder-card .reco-avatar{background:var(--surface-2);color:var(--text-mute);font-size:20px}
 
+/* Reco status (gathering testimonials) */
+.reco-status{
+  display:flex;align-items:flex-start;gap:24px;
+  padding:36px;border-radius:var(--radius);
+  background:linear-gradient(135deg,rgba(124,92,255,.08),rgba(34,211,238,.05));
+  border:1px dashed rgba(124,92,255,.35);
+  position:relative;overflow:hidden;
+}
+.reco-status::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(600px circle at 0% 0%,rgba(124,92,255,.12),transparent 50%);
+  pointer-events:none;
+}
+.reco-status-icon{
+  flex-shrink:0;
+  display:grid;place-items:center;
+  width:56px;height:56px;border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;
+  box-shadow:0 10px 30px -10px var(--accent);
+}
+.reco-status-body{flex:1;position:relative}
+.reco-status-body h3{
+  font-size:20px;font-weight:600;margin-bottom:10px;
+  display:flex;align-items:center;gap:4px;
+}
+.reco-status-body p{color:var(--text-dim);font-size:15px;margin-bottom:18px;max-width:640px}
+.loading-dots{display:inline-flex;gap:4px;margin-left:6px;align-items:center}
+.loading-dots span{
+  width:6px;height:6px;border-radius:50%;background:var(--accent-2);
+  animation:dotPulse 1.4s ease-in-out infinite;
+}
+.loading-dots span:nth-child(2){animation-delay:.2s}
+.loading-dots span:nth-child(3){animation-delay:.4s}
+@keyframes dotPulse{
+  0%,80%,100%{transform:scale(.6);opacity:.4}
+  40%{transform:scale(1);opacity:1}
+}
+@media (max-width:680px){
+  .reco-status{flex-direction:column;gap:18px;padding:26px}
+}
+
 /* ===== Contact ===== */
 .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:50px}
 .contact-card{
