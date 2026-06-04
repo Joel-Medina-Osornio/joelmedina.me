@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0b14"/>
+      <stop offset="100%" stop-color="#1a1230"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="blob1" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="350" fill="url(#blob1)"/>
+  <circle cx="1050" cy="500" r="380" fill="url(#blob2)"/>
+
+  <!-- Logo mark -->
+  <rect x="80" y="80" width="72" height="72" rx="16" fill="url(#accent)"/>
+  <text x="116" y="132" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#fff" text-anchor="middle">JM</text>
+  <text x="172" y="128" font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#a5acc0">joelmedina<tspan fill="#22d3ee">.</tspan>me</text>
+
+  <!-- Status chip -->
+  <rect x="80" y="220" width="320" height="36" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+  <circle cx="100" cy="238" r="5" fill="#22c55e"/>
+  <text x="115" y="244" font-family="Inter, sans-serif" font-size="14" fill="#a5acc0">Disponible para nuevas oportunidades</text>
+
+  <!-- Title -->
+  <text x="80" y="330" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#e8ecf5">Joel Medina</text>
+  <text x="80" y="410" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="url(#accent)">Sr Software Developer</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="470" font-family="Inter, sans-serif" font-size="22" fill="#a5acc0">8+ años · Clip · ex-Mercado Libre</text>
+  <text x="80" y="505" font-family="Inter, sans-serif" font-size="22" fill="#a5acc0">Java · Go · Sistemas distribuidos · C4 Model</text>
+
+  <!-- URL -->
+  <text x="80" y="580" font-family="JetBrains Mono, monospace" font-size="18" fill="#707892">joelmedina.me</text>
+</svg>
